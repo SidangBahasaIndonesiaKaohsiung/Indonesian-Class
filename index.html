@@ -1,0 +1,28 @@
+# 🎧 Jadwal Rotasi Audio / Video
+
+Ini adalah jadwal penanggung jawab audio dan video untuk kelas bahasa yang dimulai pada 17 Oktober. Silakan periksa hari yang kosong dan hubungi Nikai secara pribadi!
+
+> **📅 Daftar Jadwal**
+
+| Date | Audio / Video |
+| :--- | :--- |
+| 10/17 (<span style="color:blue;">Sat</span>) | 未定 |
+| 10/18 (<span style="color:red;">Sun</span>) | 未定 |
+| 10/24 (<span style="color:blue;">Sat</span>) | 未定 |
+| 10/25 (<span style="color:red;">Sun</span>) | 未定 |
+| 10/31 (<span style="color:blue;">Sat</span>) | 未定 |
+| 11/1 (<span style="color:red;">Sun</span>) | 未定 |
+| 11/7 (<span style="color:blue;">Sat</span>) | 未定 |
+| 11/8 (<span style="color:red;">Sun</span>) | 未定 |
+| 11/14 (<span style="color:blue;">Sat</span>) | 未定 |
+| 11/15 (<span style="color:red;">Sun</span>) | 未定 |
+| 11/21 (<span style="color:blue;">Sat</span>) | 未定 |
+| 11/22 (<span style="color:red;">Sun</span>) | 未定 |
+| 11/28 (<span style="color:blue;">Sat</span>) | 未定 |
+| 11/29 (<span style="color:red;">Sun</span>) | 未定 |
+| 12/5 (<span style="color:blue;">Sat</span>) | 未定 |
+| 12/6 (<span style="color:red;">Sun</span>) | 未定 |
+| 12/12 (<span style="color:blue;">Sat</span>) | 未定 |
+| 12/13 (<span style="color:red;">Sun</span>) | 未定 |
+| 12/19 (<span style="color:blue;">Sat</span>) | 未定 |
+| 12/20 (<span style="color:red;">Sun</span>) | 未定 |
