@@ -50,16 +50,18 @@
             border-bottom: 1px solid #e2e8f0; 
         }
 
-        tr:last-child td {
-            border-bottom: none;
-        }
-
         /* 👑 ヘッダー行の装飾 */
         th { 
             background-color: #003153; 
             color: white; 
             font-weight: bold; 
             letter-spacing: 0.1em; 
+            border-bottom: 2px solid #cbd5e1;
+        }
+
+        /* 土曜日の行（週末セットの上の太線） */
+        tr.sat-row td {
+            border-top: 2.5px solid #94a3b8;
         }
 
         /* 土曜日の行の背景色（薄いブルー） */
@@ -70,6 +72,16 @@
         /* 日曜日の行の背景色（薄いピンク） */
         tr.sun-row {
             background-color: #fdf5f5;
+        }
+
+        /* 日曜日の行（週末セットの下の太線、ただし最後の行以外） */
+        tr.sun-row:not(:last-child) td {
+            border-bottom: 2.5px solid #94a3b8;
+        }
+
+        /* テーブルの一番下の行の処理 */
+        tr:last-child td {
+            border-bottom: none;
         }
 
         /* 土曜日のスタイル */
