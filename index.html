@@ -15,24 +15,6 @@
             line-height: 1.8; 
             background-color: #f4f7f6; 
             font-size: 18px; 
-            transition: font-size 0.2s ease; 
-        }
-
-        .font-btn {
-            background-color: #003153;
-            color: white;
-            border: none;
-            padding: 8px 14px;
-            font-size: 16px;
-            font-weight: bold;
-            border-radius: 6px;
-            cursor: pointer;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
-            margin-left: 5px;
-            transition: background-color 0.2s;
-        }
-        .font-btn:hover {
-            background-color: #00416a;
         }
 
         /* 🎧 ヘッダー（タイトル）の装飾 */
@@ -112,11 +94,9 @@
 </head>
 <body>
 
-  
-
     <h1>Jadwal Rotasi<br>Audio / Video for Indonesian Class</h1>
 
-     <table>
+    <table>
         <thead>
             <tr>
                 <th>Date</th>
@@ -147,26 +127,8 @@
         </tbody>
     </table>
 
-    <!-- プログラム（文字サイズ変更 ＆ 過去の日付を自動で隠す機能） -->
+    <!-- プログラム（過去の日付を自動で隠す機能のみ） -->
     <script>
-        const defaultSize = 18;
-        let currentSize = parseInt(localStorage.getItem('fontSize')) || defaultSize;
-        document.body.style.fontSize = currentSize + 'px';
-
-        function changeFontSize(step) {
-            currentSize += step;
-            if (currentSize < 12) currentSize = 12;
-            if (currentSize > 32) currentSize = 32;
-            document.body.style.fontSize = currentSize + 'px';
-            localStorage.setItem('fontSize', currentSize);
-        }
-
-        function resetFontSize() {
-            currentSize = defaultSize;
-            document.body.style.fontSize = currentSize + 'px';
-            localStorage.setItem('fontSize', currentSize);
-        }
-
         const today = new Date();
         today.setHours(0, 0, 0, 0);
 
