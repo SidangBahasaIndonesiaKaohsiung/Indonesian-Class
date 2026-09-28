@@ -5,15 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jadwal Rotasi Audio / Video - Indonesian Class</title>
     <style>
-        /* 🎨 全体のベーススタイル（プルシアンブルー基調） */
+        /* 🎨 全体のベーススタイル（淡くクールなグラデーション背景） */
         body { 
             font-family: 'Helvetica Neue', Arial, 'Hiragino Kaku Gothic ProN', 'Hiragino Sans', Meiryo, sans-serif; 
             max-width: 850px; 
-            margin: 30px auto; 
+            margin: 40px auto; 
             padding: 0 20px; 
             color: #2c3e50; 
             line-height: 1.8; 
-            background-color: #f4f7f6; 
+            background: linear-gradient(135deg, #f0f4f8 0%, #d9e2ec 100%);
+            min-height: 100vh;
             font-size: 18px; 
         }
 
@@ -28,25 +29,16 @@
             text-shadow: 2px 2px 4px rgba(0,0,0,0.1); 
         }
 
-        /* 📅 見出し2 */
-        h2 {
-            color: #00416a; 
-            font-size: 1.6em;
-            margin-top: 40px;
-            border-left: 8px solid #003153; 
-            padding-left: 15px;
-        }
-
-        /* 💎 テーブル全体の装飾 */
+        /* 💎 テーブル全体の装飾（浮遊感を演出するシャドウと角丸） */
         table { 
             width: 100%; 
             border-collapse: separate; 
             border-spacing: 0; 
             margin-top: 25px; 
             background-color: white;
-            border-radius: 15px; 
+            border-radius: 16px; 
             overflow: hidden; 
-            box-shadow: 0 10px 20px rgba(0,0,0,0.1); 
+            box-shadow: 0 15px 35px rgba(0, 31, 63, 0.12), 0 5px 15px rgba(0, 0, 0, 0.05); 
         }
 
         /* セルの共通スタイル */
@@ -54,7 +46,7 @@
             padding: 18px; 
             text-align: center; 
             font-size: 1em; 
-            border-bottom: 1px solid #e0e6ed; 
+            border-bottom: 1px solid #e2e8f0; 
         }
 
         tr:last-child td {
@@ -69,9 +61,14 @@
             letter-spacing: 0.1em; 
         }
 
-        /* 偶数行の背景色 */
-        tr:nth-child(even) {
-            background-color: #fbfcfd;
+        /* 土曜日の行の背景色（薄いブルー） */
+        tr.sat-row {
+            background-color: #f4f8fb;
+        }
+
+        /* 日曜日の行の背景色（薄いピンク） */
+        tr.sun-row {
+            background-color: #fdf5f5;
         }
 
         /* 土曜日のスタイル */
@@ -88,13 +85,13 @@
 
         /* スマホ対応 */
         @media screen and (max-width: 600px) {
-            body { margin: 15px auto; }
+            body { margin: 20px auto; }
         }
     </style>
 </head>
 <body>
 
-    <h1>Jadwal Rotasi<br>Audio / Video for Indonesian Class</h1>
+    <h1>Untuk Kelas Bahasa Indonesia</h1>
 
     <table>
         <thead>
@@ -104,26 +101,26 @@
             </tr>
         </thead>
         <tbody>
-            <tr data-date="2026-10-17"><td>10/17 (<span class="sat">Sat</span>)</td><td>未定</td></tr>
-            <tr data-date="2026-10-18"><td>10/18 (<span class="sun">Sun</span>)</td><td>未定</td></tr>
-            <tr data-date="2026-10-24"><td>10/24 (<span class="sat">Sat</span>)</td><td>未定</td></tr>
-            <tr data-date="2026-10-25"><td>10/25 (<span class="sun">Sun</span>)</td><td>未定</td></tr>
-            <tr data-date="2026-10-31"><td>10/31 (<span class="sat">Sat</span>)</td><td>未定</td></tr>
-            <tr data-date="2026-11-01"><td>11/1 (<span class="sun">Sun</span>)</td><td>未定</td></tr>
-            <tr data-date="2026-11-07"><td>11/7 (<span class="sat">Sat</span>)</td><td>未定</td></tr>
-            <tr data-date="2026-11-08"><td>11/8 (<span class="sun">Sun</span>)</td><td>未定</td></tr>
-            <tr data-date="2026-11-14"><td>11/14 (<span class="sat">Sat</span>)</td><td>未定</td></tr>
-            <tr data-date="2026-11-15"><td>11/15 (<span class="sun">Sun</span>)</td><td>未定</td></tr>
-            <tr data-date="2026-11-21"><td>11/21 (<span class="sat">Sat</span>)</td><td>未定</td></tr>
-            <tr data-date="2026-11-22"><td>11/22 (<span class="sun">Sun</span>)</td><td>未定</td></tr>
-            <tr data-date="2026-11-28"><td>11/28 (<span class="sat">Sat</span>)</td><td>未定</td></tr>
-            <tr data-date="2026-11-29"><td>11/29 (<span class="sun">Sun</span>)</td><td>未定</td></tr>
-            <tr data-date="2026-12-05"><td>12/5 (<span class="sat">Sat</span>)</td><td>未定</td></tr>
-            <tr data-date="2026-12-06"><td>12/6 (<span class="sun">Sun</span>)</td><td>未定</td></tr>
-            <tr data-date="2026-12-12"><td>12/12 (<span class="sat">Sat</span>)</td><td>未定</td></tr>
-            <tr data-date="2026-12-13"><td>12/13 (<span class="sun">Sun</span>)</td><td>未定</td></tr>
-            <tr data-date="2026-12-19"><td>12/19 (<span class="sat">Sat</span>)</td><td>未定</td></tr>
-            <tr data-date="2026-12-20"><td>12/20 (<span class="sun">Sun</span>)</td><td>未定</td></tr>
+            <tr class="sat-row" data-date="2026-10-17"><td>10/17 (<span class="sat">Sat</span>)</td><td>未定</td></tr>
+            <tr class="sun-row" data-date="2026-10-18"><td>10/18 (<span class="sun">Sun</span>)</td><td>未定</td></tr>
+            <tr class="sat-row" data-date="2026-10-24"><td>10/24 (<span class="sat">Sat</span>)</td><td>未定</td></tr>
+            <tr class="sun-row" data-date="2026-10-25"><td>10/25 (<span class="sun">Sun</span>)</td><td>未定</td></tr>
+            <tr class="sat-row" data-date="2026-10-31"><td>10/31 (<span class="sat">Sat</span>)</td><td>未定</td></tr>
+            <tr class="sun-row" data-date="2026-11-01"><td>11/1 (<span class="sun">Sun</span>)</td><td>未定</td></tr>
+            <tr class="sat-row" data-date="2026-11-07"><td>11/7 (<span class="sat">Sat</span>)</td><td>未定</td></tr>
+            <tr class="sun-row" data-date="2026-11-08"><td>11/8 (<span class="sun">Sun</span>)</td><td>未定</td></tr>
+            <tr class="sat-row" data-date="2026-11-14"><td>11/14 (<span class="sat">Sat</span>)</td><td>未定</td></tr>
+            <tr class="sun-row" data-date="2026-11-15"><td>11/15 (<span class="sun">Sun</span>)</td><td>未定</td></tr>
+            <tr class="sat-row" data-date="2026-11-21"><td>11/21 (<span class="sat">Sat</span>)</td><td>未定</td></tr>
+            <tr class="sun-row" data-date="2026-11-22"><td>11/22 (<span class="sun">Sun</span>)</td><td>未定</td></tr>
+            <tr class="sat-row" data-date="2026-11-28"><td>11/28 (<span class="sat">Sat</span>)</td><td>未定</td></tr>
+            <tr class="sun-row" data-date="2026-11-29"><td>11/29 (<span class="sun">Sun</span>)</td><td>未定</td></tr>
+            <tr class="sat-row" data-date="2026-12-05"><td>12/5 (<span class="sat">Sat</span>)</td><td>未定</td></tr>
+            <tr class="sun-row" data-date="2026-12-06"><td>12/6 (<span class="sun">Sun</span>)</td><td>未定</td></tr>
+            <tr class="sat-row" data-date="2026-12-12"><td>12/12 (<span class="sat">Sat</span>)</td><td>未定</td></tr>
+            <tr class="sun-row" data-date="2026-12-13"><td>12/13 (<span class="sun">Sun</span>)</td><td>未定</td></tr>
+            <tr class="sat-row" data-date="2026-12-19"><td>12/19 (<span class="sat">Sat</span>)</td><td>未定</td></tr>
+            <tr class="sun-row" data-date="2026-12-20"><td>12/20 (<span class="sun">Sun</span>)</td><td>未定</td></tr>
         </tbody>
     </table>
 
