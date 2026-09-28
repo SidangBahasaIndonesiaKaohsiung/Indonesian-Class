@@ -54,16 +54,6 @@
             text-shadow: 2px 2px 4px rgba(0,0,0,0.1); 
         }
 
-        /* 案内文 */
-        p { 
-            font-size: 1.1em; 
-            background-color: white;
-            padding: 20px;
-            border-radius: 10px; 
-            box-shadow: 0 4px 6px rgba(0,0,0,0.05); 
-            margin-bottom: 30px;
-        }
-
         /* 📅 見出し2 */
         h2 {
             color: #00416a; 
@@ -129,6 +119,14 @@
     </style>
 </head>
 <body>
+
+    <!-- 文字サイズ変更ボタン -->
+    <div class="font-controller">
+        <button class="font-btn" onclick="changeFontSize(-2)" title="文字を小さく">A-</button>
+        <button class="font-btn" onclick="resetFontSize()" title="標準に戻す">標準</button>
+        <button class="font-btn" onclick="changeFontSize(2)" title="文字を大きく">A+</button>
+    </div>
+
     <h1>Jadwal Rotasi Audio / Video</h1>
 
     <h2>🗓️ Daftar Jadwal</h2>
@@ -140,39 +138,40 @@
             </tr>
         </thead>
         <tbody>
-            <tr><td>10/17 (<span class="sat">Sat</span>)</td><td>未定</td></tr>
-            <tr><td>10/18 (<span class="sun">Sun</span>)</td><td>未定</td></tr>
-            <tr><td>10/24 (<span class="sat">Sat</span>)</td><td>未定</td></tr>
-            <tr><td>10/25 (<span class="sun">Sun</span>)</td><td>未定</td></tr>
-            <tr><td>10/31 (<span class="sat">Sat</span>)</td><td>未定</td></tr>
-            <tr><td>11/1 (<span class="sun">Sun</span>)</td><td>未定</td></tr>
-            <tr><td>11/7 (<span class="sat">Sat</span>)</td><td>未定</td></tr>
-            <tr><td>11/8 (<span class="sun">Sun</span>)</td><td>未定</td></tr>
-            <tr><td>11/14 (<span class="sat">Sat</span>)</td><td>未定</td></tr>
-            <tr><td>11/15 (<span class="sun">Sun</span>)</td><td>未定</td></tr>
-            <tr><td>11/21 (<span class="sat">Sat</span>)</td><td>未定</td></tr>
-            <tr><td>11/22 (<span class="sun">Sun</span>)</td><td>未定</td></tr>
-            <tr><td>11/28 (<span class="sat">Sat</span>)</td><td>未定</td></tr>
-            <tr><td>11/29 (<span class="sun">Sun</span>)</td><td>未定</td></tr>
-            <tr><td>12/5 (<span class="sat">Sat</span>)</td><td>未定</td></tr>
-            <tr><td>12/6 (<span class="sun">Sun</span>)</td><td>未定</td></tr>
-            <tr><td>12/12 (<span class="sat">Sat</span>)</td><td>未定</td></tr>
-            <tr><td>12/13 (<span class="sun">Sun</span>)</td><td>未定</td></tr>
-            <tr><td>12/19 (<span class="sat">Sat</span>)</td><td>未定</td></tr>
-            <tr><td>12/20 (<span class="sun">Sun</span>)</td><td>未定</td></tr>
+            <tr data-date="2025-10-17"><td>10/17 (<span class="sat">Sat</span>)</td><td>未定</td></tr>
+            <tr data-date="2025-10-18"><td>10/18 (<span class="sun">Sun</span>)</td><td>未定</td></tr>
+            <tr data-date="2025-10-24"><td>10/24 (<span class="sat">Sat</span>)</td><td>未定</td></tr>
+            <tr data-date="2025-10-25"><td>10/25 (<span class="sun">Sun</span>)</td><td>未定</td></tr>
+            <tr data-date="2025-10-31"><td>10/31 (<span class="sat">Sat</span>)</td><td>未定</td></tr>
+            <tr data-date="2025-11-01"><td>11/1 (<span class="sun">Sun</span>)</td><td>未定</td></tr>
+            <tr data-date="2025-11-07"><td>11/7 (<span class="sat">Sat</span>)</td><td>未定</td></tr>
+            <tr data-date="2025-11-08"><td>11/8 (<span class="sun">Sun</span>)</td><td>未定</td></tr>
+            <tr data-date="2025-11-14"><td>11/14 (<span class="sat">Sat</span>)</td><td>未定</td></tr>
+            <tr data-date="2025-11-15"><td>11/15 (<span class="sun">Sun</span>)</td><td>未定</td></tr>
+            <tr data-date="2025-11-21"><td>11/21 (<span class="sat">Sat</span>)</td><td>未定</td></tr>
+            <tr data-date="2025-11-22"><td>11/22 (<span class="sun">Sun</span>)</td><td>未定</td></tr>
+            <tr data-date="2025-11-28"><td>11/28 (<span class="sat">Sat</span>)</td><td>未定</td></tr>
+            <tr data-date="2025-11-29"><td>11/29 (<span class="sun">Sun</span>)</td><td>未定</td></tr>
+            <tr data-date="2025-12-05"><td>12/5 (<span class="sat">Sat</span>)</td><td>未定</td></tr>
+            <tr data-date="2025-12-06"><td>12/6 (<span class="sun">Sun</span>)</td><td>未定</td></tr>
+            <tr data-date="2025-12-12"><td>12/12 (<span class="sat">Sat</span>)</td><td>未定</td></tr>
+            <tr data-date="2025-12-13"><td>12/13 (<span class="sun">Sun</span>)</td><td>未定</td></tr>
+            <tr data-date="2025-12-19"><td>12/19 (<span class="sat">Sat</span>)</td><td>未定</td></tr>
+            <tr data-date="2025-12-20"><td>12/20 (<span class="sun">Sun</span>)</td><td>未定</td></tr>
         </tbody>
     </table>
 
-    <!-- 文字サイズを変更するプログラム -->
+    <!-- プログラム（文字サイズ変更 ＆ 過去の日付を自動で隠す機能） -->
     <script>
+        // 1. 文字サイズ変更の処理
         const defaultSize = 18;
         let currentSize = parseInt(localStorage.getItem('fontSize')) || defaultSize;
         document.body.style.fontSize = currentSize + 'px';
 
         function changeFontSize(step) {
             currentSize += step;
-            if (currentSize < 12) currentSize = 12; // 最小制限
-            if (currentSize > 32) currentSize = 32; // 最大制限
+            if (currentSize < 12) currentSize = 12;
+            if (currentSize > 32) currentSize = 32;
             document.body.style.fontSize = currentSize + 'px';
             localStorage.setItem('fontSize', currentSize);
         }
@@ -182,6 +181,23 @@
             document.body.style.fontSize = currentSize + 'px';
             localStorage.setItem('fontSize', currentSize);
         }
+
+        // 2. 過ぎた日付の行を自動で非表示にする処理
+        const today = new Date();
+        today.setHours(0, 0, 0, 0); // 時間をリセットして日付だけで比較
+
+        const rows = document.querySelectorAll('tbody tr');
+        rows.forEach(row => {
+            const dateStr = row.getAttribute('data-date');
+            if (dateStr) {
+                const targetDate = new Date(dateStr);
+                // その日の終わり（23:59:59）を過ぎたら消えるようにする場合、または当日を過ぎたら消える場合
+                // ここでは「その日が終わったら（翌日になったら）消える」設定にしています
+                if (targetDate < today) {
+                    row.style.display = 'none'; // 過去の行を非表示にする
+                }
+            }
+        });
     </script>
 
 </body>
