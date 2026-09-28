@@ -5,57 +5,193 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jadwal Rotasi Audio / Video - Indonesian Class</title>
     <style>
-        /* 📱 ここで全体の文字サイズを大きくしています（通常より大きめの設定） */
+        /* 🎨 全体のベーススタイル（プルシアンブルー基調） */
         body { 
-            font-family: sans-serif; 
-            max-width: 800px; 
-            margin: 20px auto; 
-            padding: 0 15px; 
-            color: #333; 
-            line-height: 1.6; 
-            font-size: 20px; /* ←ここの数字を大きくするとさらに文字が大きくなります */
+            font-family: 'Helvetica Neue', Arial, 'Hiragino Kaku Gothic ProN', 'Hiragino Sans', Meiryo, sans-serif; 
+            max-width: 850px; 
+            margin: 30px auto; 
+            padding: 0 20px; 
+            color: #2c3e50; 
+            line-height: 1.8; 
+            background-color: #f4f7f6; 
+            font-size: 18px; /* 基準の文字サイズ */
+            transition: font-size 0.2s ease; /* なめらかにサイズ変更 */
         }
-        h1 { color: #2c3e50; font-size: 1.5em; border-bottom: 2px solid #eee; padding-bottom: 10px; }
-        p { font-size: 1.1em; }
-        table { width: 100%; border-collapse: collapse; margin-top: 20px; }
-        th, td { border: 1px solid #ddd; padding: 14px; text-align: center; font-size: 1.1em; }
-        th { background-color: #f8f9fa; }
-        .sat { color: blue; font-weight: bold; }
-        .sun { color: red; font-weight: bold; }
+
+        /* 🎛️ 文字サイズ変更ボタンの固定バー */
+        .font-controller {
+            position: sticky;
+            top: 10px;
+            text-align: right;
+            z-index: 1000;
+            margin-bottom: 10px;
+        }
+        .font-btn {
+            background-color: #003153;
+            color: white;
+            border: none;
+            padding: 8px 14px;
+            font-size: 16px;
+            font-weight: bold;
+            border-radius: 6px;
+            cursor: pointer;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+            margin-left: 5px;
+            transition: background-color 0.2s;
+        }
+        .font-btn:hover {
+            background-color: #00416a;
+        }
+
+        /* 🎧 ヘッダー（タイトル）の装飾 */
+        h1 { 
+            color: #003153; 
+            font-size: 2.2em; 
+            text-align: center;
+            border-bottom: 4px solid #003153; 
+            padding-bottom: 20px; 
+            margin-bottom: 30px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.1); 
+        }
+
+        /* 案内文 */
+        p { 
+            font-size: 1.1em; 
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px; 
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05); 
+            margin-bottom: 30px;
+        }
+
+        /* 📅 見出し2 */
+        h2 {
+            color: #00416a; 
+            font-size: 1.6em;
+            margin-top: 40px;
+            border-left: 8px solid #003153; 
+            padding-left: 15px;
+        }
+
+        /* 💎 テーブル全体の装飾 */
+        table { 
+            width: 100%; 
+            border-collapse: separate; 
+            border-spacing: 0; 
+            margin-top: 25px; 
+            background-color: white;
+            border-radius: 15px; 
+            overflow: hidden; 
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1); 
+        }
+
+        /* セルの共通スタイル */
+        th, td { 
+            padding: 18px; 
+            text-align: center; 
+            font-size: 1em; 
+            border-bottom: 1px solid #e0e6ed; 
+        }
+
+        tr:last-child td {
+            border-bottom: none;
+        }
+
+        /* 👑 ヘッダー行の装飾 */
+        th { 
+            background-color: #003153; 
+            color: white; 
+            font-weight: bold; 
+            letter-spacing: 0.1em; 
+        }
+
+        /* 偶数行の背景色 */
+        tr:nth-child(even) {
+            background-color: #fbfcfd;
+        }
+
+        /* 土曜日のスタイル */
+        .sat { 
+            color: #191970; 
+            font-weight: bold; 
+        }
+
+        /* 日曜日のスタイル */
+        .sun { 
+            color: #8b0000; 
+            font-weight: bold; 
+        }
+
+        /* スマホ対応 */
+        @media screen and (max-width: 600px) {
+            body { margin: 15px auto; }
+        }
     </style>
 </head>
 <body>
 
-    <h1>🎧 Jadwal Rotasi Audio / Video</h1>
-    <p>Ini adalah jadwal penanggung jawab audio dan video untuk kelas bahasa yang dimulai pada 17 Oktober. Silakan periksa hari yang kosong dan hubungi Nikai secara pribadi! Terima kasih banyak!</p>
+    <!-- 文字サイズ変更ボタン -->
+    <div class="font-controller">
+        <button class="font-btn" onclick="changeFontSize(-2)" title="文字を小さく">A-</button>
+        <button class="font-btn" onclick="resetFontSize()" title="標準に戻す">標準</button>
+        <button class="font-btn" onclick="changeFontSize(2)" title="文字を大きく">A+</button>
+    </div>
 
-    <h2>🗓️ Daftar Jadwal</h2>
+    <h1>🎧 Jadwal Rotasi Audio / Video</h1>
+    <p>Ini adalah jadwal penanggung jawab audio dan video untuk kelas bahasa yang dimulai pada 17 Oktober. Silakan periksa hari yang kosong dan hubungi Nikai secara pribadi! Terima kasih atas kerja samanya.</p>
+
+    <h2>📅 Daftar Jadwal</h2>
     <table>
-        <tr>
-            <th>Date</th>
-            <th>Audio / Video</th>
-        </tr>
-        <tr><td>10/17 (<span class="sat">Sat</span>)</td><td>未定</td></tr>
-        <tr><td>10/18 (<span class="sun">Sun</span>)</td><td>未定</td></tr>
-        <tr><td>10/24 (<span class="sat">Sat</span>)</td><td>未定</td></tr>
-        <tr><td>10/25 (<span class="sun">Sun</span>)</td><td>未定</td></tr>
-        <tr><td>10/31 (<span class="sat">Sat</span>)</td><td>未定</td></tr>
-        <tr><td>11/1 (<span class="sun">Sun</span>)</td><td>未定</td></tr>
-        <tr><td>11/7 (<span class="sat">Sat</span>)</td><td>未定</td></tr>
-        <tr><td>11/8 (<span class="sun">Sun</span>)</td><td>未定</td></tr>
-        <tr><td>11/14 (<span class="sat">Sat</span>)</td><td>未定</td></tr>
-        <tr><td>11/15 (<span class="sun">Sun</span>)</td><td>未定</td></tr>
-        <tr><td>11/21 (<span class="sat">Sat</span>)</td><td>未定</td></tr>
-        <tr><td>11/22 (<span class="sun">Sun</span>)</td><td>未定</td></tr>
-        <tr><td>11/28 (<span class="sat">Sat</span>)</td><td>未定</td></tr>
-        <tr><td>11/29 (<span class="sun">Sun</span>)</td><td>未定</td></tr>
-        <tr><td>12/5 (<span class="sat">Sat</span>)</td><td>未定</td></tr>
-        <tr><td>12/6 (<span class="sun">Sun</span>)</td><td>未定</td></tr>
-        <tr><td>12/12 (<span class="sat">Sat</span>)</td><td>未定</td></tr>
-        <tr><td>12/13 (<span class="sun">Sun</span>)</td><td>未定</td></tr>
-        <tr><td>12/19 (<span class="sat">Sat</span>)</td><td>未定</td></tr>
-        <tr><td>12/20 (<span class="sun">Sun</span>)</td><td>未定</td></tr>
+        <thead>
+            <tr>
+                <th>Date</th>
+                <th>Audio / Video</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr><td>10/17 (<span class="sat">Sat</span>)</td><td>未定</td></tr>
+            <tr><td>10/18 (<span class="sun">Sun</span>)</td><td>未定</td></tr>
+            <tr><td>10/24 (<span class="sat">Sat</span>)</td><td>未定</td></tr>
+            <tr><td>10/25 (<span class="sun">Sun</span>)</td><td>未定</td></tr>
+            <tr><td>10/31 (<span class="sat">Sat</span>)</td><td>未定</td></tr>
+            <tr><td>11/1 (<span class="sun">Sun</span>)</td><td>未定</td></tr>
+            <tr><td>11/7 (<span class="sat">Sat</span>)</td><td>未定</td></tr>
+            <tr><td>11/8 (<span class="sun">Sun</span>)</td><td>未定</td></tr>
+            <tr><td>11/14 (<span class="sat">Sat</span>)</td><td>未定</td></tr>
+            <tr><td>11/15 (<span class="sun">Sun</span>)</td><td>未定</td></tr>
+            <tr><td>11/21 (<span class="sat">Sat</span>)</td><td>未定</td></tr>
+            <tr><td>11/22 (<span class="sun">Sun</span>)</td><td>未定</td></tr>
+            <tr><td>11/28 (<span class="sat">Sat</span>)</td><td>未定</td></tr>
+            <tr><td>11/29 (<span class="sun">Sun</span>)</td><td>未定</td></tr>
+            <tr><td>12/5 (<span class="sat">Sat</span>)</td><td>未定</td></tr>
+            <tr><td>12/6 (<span class="sun">Sun</span>)</td><td>未定</td></tr>
+            <tr><td>12/12 (<span class="sat">Sat</span>)</td><td>未定</td></tr>
+            <tr><td>12/13 (<span class="sun">Sun</span>)</td><td>未定</td></tr>
+            <tr><td>12/19 (<span class="sat">Sat</span>)</td><td>未定</td></tr>
+            <tr><td>12/20 (<span class="sun">Sun</span>)</td><td>未定</td></tr>
+        </tbody>
     </table>
+
+    <!-- 文字サイズを変更するプログラム -->
+    <script>
+        const defaultSize = 18;
+        let currentSize = parseInt(localStorage.getItem('fontSize')) || defaultSize;
+        document.body.style.fontSize = currentSize + 'px';
+
+        function changeFontSize(step) {
+            currentSize += step;
+            if (currentSize < 12) currentSize = 12; // 最小制限
+            if (currentSize > 32) currentSize = 32; // 最大制限
+            document.body.style.fontSize = currentSize + 'px';
+            localStorage.setItem('fontSize', currentSize);
+        }
+
+        function resetFontSize() {
+            currentSize = defaultSize;
+            document.body.style.fontSize = currentSize + 'px';
+            localStorage.setItem('fontSize', currentSize);
+        }
+    </script>
 
 </body>
 </html>
