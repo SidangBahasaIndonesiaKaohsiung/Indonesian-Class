@@ -14,8 +14,8 @@
             color: #2c3e50; 
             line-height: 1.8; 
             background-color: #f4f7f6; 
-            font-size: 18px; /* 基準の文字サイズ */
-            transition: font-size 0.2s ease; /* なめらかにサイズ変更 */
+            font-size: 18px; 
+            transition: font-size 0.2s ease; 
         }
 
         /* 🎛️ 文字サイズ変更ボタンの固定バー */
@@ -90,7 +90,7 @@
         /* 👑 ヘッダー行の装飾 */
         th { 
             background-color: #003153; 
-            color: white;
+            color: white; 
             font-weight: bold; 
             letter-spacing: 0.1em; 
         }
@@ -129,6 +129,7 @@
 
     <h1>Jadwal Rotasi Audio / Video</h1>
 
+    <h2>🗓️ Daftar Jadwal</h2>
     <table>
         <thead>
             <tr>
@@ -162,7 +163,6 @@
 
     <!-- プログラム（文字サイズ変更 ＆ 過去の日付を自動で隠す機能） -->
     <script>
-        // 1. 文字サイズ変更の処理
         const defaultSize = 18;
         let currentSize = parseInt(localStorage.getItem('fontSize')) || defaultSize;
         document.body.style.fontSize = currentSize + 'px';
@@ -181,19 +181,16 @@
             localStorage.setItem('fontSize', currentSize);
         }
 
-        // 2. 過ぎた日付の行を自動で非表示にする処理
         const today = new Date();
-        today.setHours(0, 0, 0, 0); // 時間をリセットして日付だけで比較
+        today.setHours(0, 0, 0, 0);
 
         const rows = document.querySelectorAll('tbody tr');
         rows.forEach(row => {
             const dateStr = row.getAttribute('data-date');
             if (dateStr) {
                 const targetDate = new Date(dateStr);
-                // その日の終わり（23:59:59）を過ぎたら消えるようにする場合、または当日を過ぎたら消える場合
-                // ここでは「その日が終わったら（翌日になったら）消える」設定にしています
                 if (targetDate < today) {
-                    row.style.display = 'none'; // 過去の行を非表示にする
+                    row.style.display = 'none';
                 }
             }
         });
