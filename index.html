@@ -143,8 +143,14 @@
         </tbody>
     </table>
 
-    <!-- プログラム（過去の日付を自動で隠す機能 ＋ ページのトップにスクロール） -->
+    <!-- プログラム（過去行の非表示 ＋ ブラウザのスクロール復元無効化 ＋ 強制トップ移動） -->
     <script>
+        // ブラウザの自動スクロール復元を無効化（リロード時に位置を勝手に復元させない）
+        if ('scrollRestoration' in history) {
+            history.scrollRestoration = 'manual';
+        }
+
+        // 過去の日付の行を隠す処理
         const today = new Date();
         today.setHours(0, 0, 0, 0);
 
@@ -159,8 +165,13 @@
             }
         });
 
-        // ページを開いたときに必ずトップに移動する
+        // ページ読み込み時と読み込み完了後の2段階で確実にトップへスクロールさせる
         window.scrollTo(0, 0);
+        window.addEventListener('load', () => {
+            setTimeout(() => {
+                window.scrollTo(0, 0);
+            }, 10);
+        });
     </script>
 
 </body>
