@@ -102,6 +102,20 @@
             color: #94a3b8 !important;
         }
 
+        /* 編集可能な要素の見た目（ホバー時や編集中） */
+        .editable {
+            cursor: pointer;
+            border-radius: 4px;
+            transition: background-color 0.2s;
+        }
+        .editable:hover {
+            background-color: rgba(0, 49, 83, 0.05);
+        }
+        .editable:focus {
+            outline: 2px solid #003153;
+            background-color: #fff;
+        }
+
         /* スマホ対応 */
         @media screen and (max-width: 600px) {
             body { margin: 20px auto; }
@@ -120,39 +134,39 @@
             </tr>
         </thead>
         <tbody>
-            <tr class="sat-row" data-date="2026-10-17"><td>10/17 (<span class="sat">Sat</span>)</td><td>Ines</td></tr>
-            <tr class="sun-row" data-date="2026-10-18"><td>10/18 (<span class="sun">Sun</span>)</td><td>Sayo</td></tr>
+            <tr class="sat-row" data-date="2026-10-17"><td><span class="editable" contenteditable="false">10/17 (<span class="sat">Sat</span>)</span></td><td><span class="editable" contenteditable="false">Ines</span></td></tr>
+            <tr class="sun-row" data-date="2026-10-18"><td><span class="editable" contenteditable="false">10/18 (<span class="sun">Sun</span>)</span></td><td><span class="editable" contenteditable="false">Sayo</span></td></tr>
 
-            <tr class="sat-row" data-date="2026-10-24"><td>10/24 (<span class="sat">Sat</span>)</td><td>Yusuf</td></tr>
-            <tr class="sun-row" data-date="2026-10-25"><td>10/25 (<span class="sun">Sun</span>)</td><td>Linling</td></tr>
+            <tr class="sat-row" data-date="2026-10-24"><td><span class="editable" contenteditable="false">10/24 (<span class="sat">Sat</span>)</span></td><td><span class="editable" contenteditable="false">Yusuf</span></td></tr>
+            <tr class="sun-row" data-date="2026-10-25"><td><span class="editable" contenteditable="false">10/25 (<span class="sun">Sun</span>)</span></td><td><span class="editable" contenteditable="false">Linling</span></td></tr>
 
-            <tr class="sat-row" data-date="2026-10-31"><td>10/31 (<span class="sat">Sat</span>)</td><td>Daud</td></tr>
-            <tr class="sun-row" data-date="2026-11-01"><td>11/1 (<span class="sun">Sun</span>)</td><td>Yoshiya</td></tr>
+            <tr class="sat-row" data-date="2026-10-31"><td><span class="editable" contenteditable="false">10/31 (<span class="sat">Sat</span>)</span></td><td><span class="editable" contenteditable="false">Daud</span></td></tr>
+            <tr class="sun-row" data-date="2026-11-01"><td><span class="editable" contenteditable="false">11/1 (<span class="sun">Sun</span>)</span></td><td><span class="editable" contenteditable="false">Yoshiya</span></td></tr>
 
-            <tr class="sat-row" data-date="2026-11-07"><td class="no-class">11/7 (<span class="no-class">Sat</span>)</td><td class="no-class">沒有</td></tr>
-            <tr class="sun-row" data-date="2026-11-08"><td class="no-class">11/8 (<span class="no-class">Sun</span>)</td><td class="no-class">沒有</td></tr>
+            <tr class="sat-row" data-date="2026-11-07"><td><span class="editable no-class" contenteditable="false">11/7 (<span class="no-class">Sat</span>)</span></td><td><span class="editable no-class" contenteditable="false">沒有</span></td></tr>
+            <tr class="sun-row" data-date="2026-11-08"><td><span class="editable no-class" contenteditable="false">11/8 (<span class="no-class">Sun</span>)</span></td><td><span class="editable no-class" contenteditable="false">沒有</span></td></tr>
 
-            <tr class="sat-row" data-date="2026-11-14"><td>11/14 (<span class="sat">Sat</span>)</td><td>Tina</td></tr>
-            <tr class="sun-row" data-date="2026-11-15"><td>11/15 (<span class="sun">Sun</span>)</td><td>Sayo</td></tr>
+            <tr class="sat-row" data-date="2026-11-14"><td><span class="editable" contenteditable="false">11/14 (<span class="sat">Sat</span>)</span></td><td><span class="editable" contenteditable="false">Tina</span></td></tr>
+            <tr class="sun-row" data-date="2026-11-15"><td><span class="editable" contenteditable="false">11/15 (<span class="sun">Sun</span>)</span></td><td><span class="editable" contenteditable="false">Sayo</span></td></tr>
 
-            <tr class="sat-row" data-date="2026-11-21"><td>11/21 (<span class="sat">Sat</span>)</td><td>Ines</td></tr>
-            <tr class="sun-row" data-date="2026-11-22"><td>11/22 (<span class="sun">Sun</span>)</td><td>Yoshiya</td></tr>
+            <tr class="sat-row" data-date="2026-11-21"><td><span class="editable" contenteditable="false">11/21 (<span class="sat">Sat</span>)</span></td><td><span class="editable" contenteditable="false">Ines</span></td></tr>
+            <tr class="sun-row" data-date="2026-11-22"><td><span class="editable" contenteditable="false">11/22 (<span class="sun">Sun</span>)</span></td><td><span class="editable" contenteditable="false">Yoshiya</span></td></tr>
 
-            <tr class="sat-row" data-date="2026-11-28"><td>11/28 (<span class="sat">Sat</span>)</td><td>Yusuf</td></tr>
-            <tr class="sun-row" data-date="2026-11-29"><td>11/29 (<span class="sun">Sun</span>)</td><td>Linling</td></tr>
+            <tr class="sat-row" data-date="2026-11-28"><td><span class="editable" contenteditable="false">11/28 (<span class="sat">Sat</span>)</span></td><td><span class="editable" contenteditable="false">Yusuf</span></td></tr>
+            <tr class="sun-row" data-date="2026-11-29"><td><span class="editable" contenteditable="false">11/29 (<span class="sun">Sun</span>)</span></td><td><span class="editable" contenteditable="false">Linling</span></td></tr>
 
-            <tr class="sat-row" data-date="2026-12-05"><td class="no-class">12/5 (<span class="no-class">Sat</span>)</td><td class="no-class">沒有</td></tr>
-            <tr class="sun-row" data-date="2026-12-06"><td class="no-class">12/6 (<span class="no-class">Sun</span>)</td><td class="no-class">沒有</td></tr>
+            <tr class="sat-row" data-date="2026-12-05"><td><span class="editable no-class" contenteditable="false">12/5 (<span class="no-class">Sat</span>)</span></td><td><span class="editable no-class" contenteditable="false">沒有</span></td></tr>
+            <tr class="sun-row" data-date="2026-12-06"><td><span class="editable no-class" contenteditable="false">12/6 (<span class="no-class">Sun</span>)</span></td><td><span class="editable no-class" contenteditable="false">沒有</span></td></tr>
 
-            <tr class="sat-row" data-date="2026-12-12"><td>12/12 (<span class="sat">Sat</span>)</td><td>Tina</td></tr>
-            <tr class="sun-row" data-date="2026-12-13"><td>12/13 (<span class="sun">Sun</span>)</td><td>Sayo</td></tr>
+            <tr class="sat-row" data-date="2026-12-12"><td><span class="editable" contenteditable="false">12/12 (<span class="sat">Sat</span>)</span></td><td><span class="editable" contenteditable="false">Tina</span></td></tr>
+            <tr class="sun-row" data-date="2026-12-13"><td><span class="editable" contenteditable="false">12/13 (<span class="sun">Sun</span>)</span></td><td><span class="editable" contenteditable="false">Sayo</span></td></tr>
 
-            <tr class="sat-row" data-date="2026-12-19"><td>12/19 (<span class="sat">Sat</span>)</td><td>Daud</td></tr>
-            <tr class="sun-row" data-date="2026-12-20"><td>12/20 (<span class="sun">Sun</span>)</td><td>Yoshiya</td></tr>
+            <tr class="sat-row" data-date="2026-12-19"><td><span class="editable" contenteditable="false">12/19 (<span class="sat">Sat</span>)</span></td><td><span class="editable" contenteditable="false">Daud</span></td></tr>
+            <tr class="sun-row" data-date="2026-12-20"><td><span class="editable" contenteditable="false">12/20 (<span class="sun">Sun</span>)</span></td><td><span class="editable" contenteditable="false">Yoshiya</span></td></tr>
         </tbody>
     </table>
 
-    <!-- プログラム（過去行の非表示 ＋ ブラウザのスクロール復元無効化 ＋ 強制トップ移動） -->
+    <!-- プログラム（過去行の非表示 ＋ ブラウザのスクロール復元無効化 ＋ 強制トップ移動 ＋ トリプルタップ編集） -->
     <script>
         // ブラウザの自動スクロール復元を無効化（リロード時に位置を勝手に復元させない）
         if ('scrollRestoration' in history) {
@@ -180,6 +194,42 @@
             setTimeout(() => {
                 window.scrollTo(0, 0);
             }, 10);
+        });
+
+        // スマホでの3回タップ（トリプルタップ）によるインライン編集機能
+        const editables = document.querySelectorAll('.editable');
+        editables.forEach(el => {
+            let lastTapTime = 0;
+            let tapCount = 0;
+
+            el.addEventListener('click', (e) => {
+                const currentTime = new Date().getTime();
+                const tapLength = currentTime - lastTapTime;
+
+                if (tapLength < 400 && tapLength > 0) {
+                    tapCount++;
+                } else {
+                    tapCount = 1;
+                }
+
+                lastTapTime = currentTime;
+
+                // 3回タップされた場合
+                if (tapCount === 3) {
+                    e.preventDefault();
+                    el.setAttribute('contenteditable', 'true');
+                    el.focus();
+                    
+                    // 編集終了時の処理（フォーカスが外れたらロックに戻す）
+                    const handleBlur = () => {
+                        el.setAttribute('contenteditable', 'false');
+                        el.removeEventListener('blur', handleBlur);
+                    };
+                    el.addEventListener('blur', handleBlur);
+
+                    tapCount = 0;
+                }
+            });
         });
     </script>
 
