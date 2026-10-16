@@ -1,168 +1,145 @@
-<table>
-  <thead>
-    <tr>
-      <th>No</th>
-      <th>Indonesian Alphabet</th>
-      <th>English Pronunciation</th>
-      <th>Word</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>1</td>
-      <td>Aa</td>
-      <td>a</td>
-      <td>Apel (Apple)</td>
-    </tr>
-    <tr>
-      <td>2</td>
-      <td>Bb</td>
-      <td>be</td>
-      <td>Bola (Ball)</td>
-    </tr>
-    <tr>
-      <td>3</td>
-      <td>Cc</td>
-      <td>ce</td>
-      <td>Cicak (Lizard)</td>
-    </tr>
-    <tr>
-      <td>4</td>
-      <td>Dd</td>
-      <td>de</td>
-      <td>Durian (Durian)</td>
-    </tr>
-    <tr>
-      <td>5</td>
-      <td>Ee</td>
-      <td>e</td>
-      <td>Eskrim (Ice Cream)</td>
-    </tr>
-    <tr>
-      <td>6</td>
-      <td>Ff</td>
-      <td>ef</td>
-      <td>Foto (Photo)</td>
-    </tr>
-    <tr>
-      <td>7</td>
-      <td>Gg</td>
-      <td>ge</td>
-      <td>Gelas (Glass)</td>
-    </tr>
-    <tr>
-      <td>8</td>
-      <td>Hh</td>
-      <td>ha</td>
-      <td>Harimau (Tiger)</td>
-    </tr>
-    <tr>
-      <td>9</td>
-      <td>Ii</td>
-      <td>i</td>
-      <td>Ikan (Fish)</td>
-    </tr>
-    <tr>
-      <td>10</td>
-      <td>Jj</td>
-      <td>je</td>
-      <td>Jerapah (Giraffe)</td>
-    </tr>
-    <tr>
-      <td>11</td>
-      <td>Kk</td>
-      <td>ka</td>
-      <td>Kura-kura (Turtle)</td>
-    </tr>
-    <tr>
-      <td>12</td>
-      <td>Ll</td>
-      <td>el</td>
-      <td>Lengan (Arm)</td>
-    </tr>
-    <tr>
-      <td>13</td>
-      <td>Mm</td>
-      <td>em</td>
-      <td>Monyet (Monkey)</td>
-    </tr>
-    <tr>
-      <td>14</td>
-      <td>Nn</td>
-      <td>en</td>
-      <td>Nanas (Pineapple)</td>
-    </tr>
-    <tr>
-      <td>15</td>
-      <td>Oo</td>
-      <td>o</td>
-      <td>Orangutan (Orangutan)</td>
-    </tr>
-    <tr>
-      <td>16</td>
-      <td>Pp</td>
-      <td>pe</td>
-      <td>Pisang (Banana)</td>
-    </tr>
-    <tr>
-      <td>17</td>
-      <td>Qq</td>
-      <td>ki</td>
-      <td>Quran (Quran)</td>
-    </tr>
-    <tr>
-      <td>18</td>
-      <td>Rr</td>
-      <td>er</td>
-      <td>Raja (King)</td>
-    </tr>
-    <tr>
-      <td>19</td>
-      <td>Ss</td>
-      <td>es</td>
-      <td>Sapi (Cow)</td>
-    </tr>
-    <tr>
-      <td>20</td>
-      <td>Tt</td>
-      <td>te</td>
-      <td>Tupai (Squirrel)</td>
-    </tr>
-    <tr>
-      <td>21</td>
-      <td>Uu</td>
-      <td>u</td>
-      <td>Ubi (Sweet Potato)</td>
-    </tr>
-    <tr>
-      <td>22</td>
-      <td>Vv</td>
-      <td>ve</td>
-      <td>Vas Bunga (Flower Vase)</td>
-    </tr>
-    <tr>
-      <td>23</td>
-      <td>Ww</td>
-      <td>we</td>
-      <td>Wayang (Puppet)</td>
-    </tr>
-    <tr>
-      <td>24</td>
-      <td>Xx</td>
-      <td>eks</td>
-      <td>Xylophone (Xylophone)</td>
-    </tr>
-    <tr>
-      <td>25</td>
-      <td>Yy</td>
-      <td>ye</td>
-      <td>Yoyo (Yoyo)</td>
-    </tr>
-    <tr>
-      <td>26</td>
-      <td>Zz</td>
-      <td>zet</td>
-      <td>Zebra (Zebra)</td>
-    </tr>
-  </tbody>
-</table>
+<div style="display: flex; justify-content: center; width: 100%; margin: 20px 0;">
+  <div style="width: 100%; max-width: 500px; overflow-x: auto; box-sizing: border-box;">
+    <table style="border-collapse: collapse; width: 100%; margin: 0 auto; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-size: 14px;">
+      <thead>
+        <tr style="border-bottom: 2px solid #d0d7de; background-color: #f6f8fa;">
+          <th style="padding: 10px 16px; text-align: left; width: 30%;">Huruf</th>
+          <th style="padding: 10px 16px; text-align: left; width: 35%;">Cara Baca</th>
+          <th style="padding: 10px 16px; text-align: left; width: 35%;">Kata</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr style="border-bottom: 1px solid #e1e4e8;">
+          <td style="padding: 10px 16px; font-weight: bold;">A</td>
+          <td style="padding: 10px 16px;">a</td>
+          <td style="padding: 10px 16px;">Apel (蘋果)</td>
+        </tr>
+        <tr style="border-bottom: 1px solid #e1e4e8;">
+          <td style="padding: 10px 16px; font-weight: bold;">B</td>
+          <td style="padding: 10px 16px;">be</td>
+          <td style="padding: 10px 16px;">Bola (球)</td>
+        </tr>
+        <tr style="border-bottom: 1px solid #e1e4e8;">
+          <td style="padding: 10px 16px; font-weight: bold;">C</td>
+          <td style="padding: 10px 16px;">ce</td>
+          <td style="padding: 10px 16px;">Cicak (壁虎)</td>
+        </tr>
+        <tr style="border-bottom: 1px solid #e1e4e8;">
+          <td style="padding: 10px 16px; font-weight: bold;">D</td>
+          <td style="padding: 10px 16px;">de</td>
+          <td style="padding: 10px 16px;">Durian (榴槤)</td>
+        </tr>
+        <tr style="border-bottom: 1px solid #e1e4e8;">
+          <td style="padding: 10px 16px; font-weight: bold;">E</td>
+          <td style="padding: 10px 16px;">e</td>
+          <td style="padding: 10px 16px;">Eskrim (冰淇淋)</td>
+        </tr>
+        <tr style="border-bottom: 1px solid #e1e4e8;">
+          <td style="padding: 10px 16px; font-weight: bold;">F</td>
+          <td style="padding: 10px 16px;">ef</td>
+          <td style="padding: 10px 16px;">Foto (照片)</td>
+        </tr>
+        <tr style="border-bottom: 1px solid #e1e4e8;">
+          <td style="padding: 10px 16px; font-weight: bold;">G</td>
+          <td style="padding: 10px 16px;">ge</td>
+          <td style="padding: 10px 16px;">Gelas (玻璃杯)</td>
+        </tr>
+        <tr style="border-bottom: 1px solid #e1e4e8;">
+          <td style="padding: 10px 16px; font-weight: bold;">H</td>
+          <td style="padding: 10px 16px;">ha</td>
+          <td style="padding: 10px 16px;">Harimau (老虎)</td>
+        </tr>
+        <tr style="border-bottom: 1px solid #e1e4e8;">
+          <td style="padding: 10px 16px; font-weight: bold;">I</td>
+          <td style="padding: 10px 16px;">i</td>
+          <td style="padding: 10px 16px;">Ikan (魚)</td>
+        </tr>
+        <tr style="border-bottom: 1px solid #e1e4e8;">
+          <td style="padding: 10px 16px; font-weight: bold;">J</td>
+          <td style="padding: 10px 16px;">je</td>
+          <td style="padding: 10px 16px;">Jerapah (長頸鹿)</td>
+        </tr>
+        <tr style="border-bottom: 1px solid #e1e4e8;">
+          <td style="padding: 10px 16px; font-weight: bold;">K</td>
+          <td style="padding: 10px 16px;">ka</td>
+          <td style="padding: 10px 16px;">Kura-kura (烏龜)</td>
+        </tr>
+        <tr style="border-bottom: 1px solid #e1e4e8;">
+          <td style="padding: 10px 16px; font-weight: bold;">L</td>
+          <td style="padding: 10px 16px;">el</td>
+          <td style="padding: 10px 16px;">Lengan (手臂)</td>
+        </tr>
+        <tr style="border-bottom: 1px solid #e1e4e8;">
+          <td style="padding: 10px 16px; font-weight: bold;">M</td>
+          <td style="padding: 10px 16px;">em</td>
+          <td style="padding: 10px 16px;">Monyet (猴子)</td>
+        </tr>
+        <tr style="border-bottom: 1px solid #e1e4e8;">
+          <td style="padding: 10px 16px; font-weight: bold;">N</td>
+          <td style="padding: 10px 16px;">en</td>
+          <td style="padding: 10px 16px;">Nanas (鳳梨)</td>
+        </tr>
+        <tr style="border-bottom: 1px solid #e1e4e8;">
+          <td style="padding: 10px 16px; font-weight: bold;">O</td>
+          <td style="padding: 10px 16px;">o</td>
+          <td style="padding: 10px 16px;">Orangutan (紅毛猩猩)</td>
+        </tr>
+        <tr style="border-bottom: 1px solid #e1e4e8;">
+          <td style="padding: 10px 16px; font-weight: bold;">P</td>
+          <td style="padding: 10px 16px;">pe</td>
+          <td style="padding: 10px 16px;">Pisang (香蕉)</td>
+        </tr>
+        <tr style="border-bottom: 1px solid #e1e4e8;">
+          <td style="padding: 10px 16px; font-weight: bold;">Q</td>
+          <td style="padding: 10px 16px;">ki</td>
+          <td style="padding: 10px 16px;">Quran (可蘭經)</td>
+        </tr>
+        <tr style="border-bottom: 1px solid #e1e4e8;">
+          <td style="padding: 10px 16px; font-weight: bold;">R</td>
+          <td style="padding: 10px 16px;">er</td>
+          <td style="padding: 10px 16px;">Raja (國王)</td>
+        </tr>
+        <tr style="border-bottom: 1px solid #e1e4e8;">
+          <td style="padding: 10px 16px; font-weight: bold;">S</td>
+          <td style="padding: 10px 16px;">es</td>
+          <td style="padding: 10px 16px;">Sapi (牛)</td>
+        </tr>
+        <tr style="border-bottom: 1px solid #e1e4e8;">
+          <td style="padding: 10px 16px; font-weight: bold;">T</td>
+          <td style="padding: 10px 16px;">te</td>
+          <td style="padding: 10px 16px;">Tupai (松鼠)</td>
+        </tr>
+        <tr style="border-bottom: 1px solid #e1e4e8;">
+          <td style="padding: 10px 16px; font-weight: bold;">U</td>
+          <td style="padding: 10px 16px;">u</td>
+          <td style="padding: 10px 16px;">Ubi (地瓜)</td>
+        </tr>
+        <tr style="border-bottom: 1px solid #e1e4e8;">
+          <td style="padding: 10px 16px; font-weight: bold;">V</td>
+          <td style="padding: 10px 16px;">ve</td>
+          <td style="padding: 10px 16px;">Vas Bunga (花瓶)</td>
+        </tr>
+        <tr style="border-bottom: 1px solid #e1e4e8;">
+          <td style="padding: 10px 16px; font-weight: bold;">W</td>
+          <td style="padding: 10px 16px;">we</td>
+          <td style="padding: 10px 16px;">Wayang (皮影戲人形)</td>
+        </tr>
+        <tr style="border-bottom: 1px solid #e1e4e8;">
+          <td style="padding: 10px 16px; font-weight: bold;">X</td>
+          <td style="padding: 10px 16px;">eks</td>
+          <td style="padding: 10px 16px;">Xylophone (木琴)</td>
+        </tr>
+        <tr style="border-bottom: 1px solid #e1e4e8;">
+          <td style="padding: 10px 16px; font-weight: bold;">Y</td>
+          <td style="padding: 10px 16px;">ye</td>
+          <td style="padding: 10px 16px;">Yoyo (溜溜球)</td>
+        </tr>
+        <tr style="border-bottom: 1px solid #e1e4e8;">
+          <td style="padding: 10px 16px; font-weight: bold;">Z</td>
+          <td style="padding: 10px 16px;">zet</td>
+          <td style="padding: 10px 16px;">Zebra (斑馬)</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
