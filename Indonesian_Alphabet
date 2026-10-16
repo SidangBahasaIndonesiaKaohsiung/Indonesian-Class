@@ -1,0 +1,168 @@
+<table>
+  <thead>
+    <tr>
+      <th>No</th>
+      <th>Indonesian Alphabet</th>
+      <th>English Pronunciation</th>
+      <th>Word</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>Aa</td>
+      <td>a</td>
+      <td>Apel (Apple)</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>Bb</td>
+      <td>be</td>
+      <td>Bola (Ball)</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>Cc</td>
+      <td>ce</td>
+      <td>Cicak (Lizard)</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>Dd</td>
+      <td>de</td>
+      <td>Durian (Durian)</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>Ee</td>
+      <td>e</td>
+      <td>Eskrim (Ice Cream)</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>Ff</td>
+      <td>ef</td>
+      <td>Foto (Photo)</td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td>Gg</td>
+      <td>ge</td>
+      <td>Gelas (Glass)</td>
+    </tr>
+    <tr>
+      <td>8</td>
+      <td>Hh</td>
+      <td>ha</td>
+      <td>Harimau (Tiger)</td>
+    </tr>
+    <tr>
+      <td>9</td>
+      <td>Ii</td>
+      <td>i</td>
+      <td>Ikan (Fish)</td>
+    </tr>
+    <tr>
+      <td>10</td>
+      <td>Jj</td>
+      <td>je</td>
+      <td>Jerapah (Giraffe)</td>
+    </tr>
+    <tr>
+      <td>11</td>
+      <td>Kk</td>
+      <td>ka</td>
+      <td>Kura-kura (Turtle)</td>
+    </tr>
+    <tr>
+      <td>12</td>
+      <td>Ll</td>
+      <td>el</td>
+      <td>Lengan (Arm)</td>
+    </tr>
+    <tr>
+      <td>13</td>
+      <td>Mm</td>
+      <td>em</td>
+      <td>Monyet (Monkey)</td>
+    </tr>
+    <tr>
+      <td>14</td>
+      <td>Nn</td>
+      <td>en</td>
+      <td>Nanas (Pineapple)</td>
+    </tr>
+    <tr>
+      <td>15</td>
+      <td>Oo</td>
+      <td>o</td>
+      <td>Orangutan (Orangutan)</td>
+    </tr>
+    <tr>
+      <td>16</td>
+      <td>Pp</td>
+      <td>pe</td>
+      <td>Pisang (Banana)</td>
+    </tr>
+    <tr>
+      <td>17</td>
+      <td>Qq</td>
+      <td>ki</td>
+      <td>Quran (Quran)</td>
+    </tr>
+    <tr>
+      <td>18</td>
+      <td>Rr</td>
+      <td>er</td>
+      <td>Raja (King)</td>
+    </tr>
+    <tr>
+      <td>19</td>
+      <td>Ss</td>
+      <td>es</td>
+      <td>Sapi (Cow)</td>
+    </tr>
+    <tr>
+      <td>20</td>
+      <td>Tt</td>
+      <td>te</td>
+      <td>Tupai (Squirrel)</td>
+    </tr>
+    <tr>
+      <td>21</td>
+      <td>Uu</td>
+      <td>u</td>
+      <td>Ubi (Sweet Potato)</td>
+    </tr>
+    <tr>
+      <td>22</td>
+      <td>Vv</td>
+      <td>ve</td>
+      <td>Vas Bunga (Flower Vase)</td>
+    </tr>
+    <tr>
+      <td>23</td>
+      <td>Ww</td>
+      <td>we</td>
+      <td>Wayang (Puppet)</td>
+    </tr>
+    <tr>
+      <td>24</td>
+      <td>Xx</td>
+      <td>eks</td>
+      <td>Xylophone (Xylophone)</td>
+    </tr>
+    <tr>
+      <td>25</td>
+      <td>Yy</td>
+      <td>ye</td>
+      <td>Yoyo (Yoyo)</td>
+    </tr>
+    <tr>
+      <td>26</td>
+      <td>Zz</td>
+      <td>zet</td>
+      <td>Zebra (Zebra)</td>
+    </tr>
+  </tbody>
+</table>
